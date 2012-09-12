@@ -1,1 +1,5 @@
 Development of apertium-de-en 
+
+To compile the monodix just run:
+
+./make-monodix.sh
