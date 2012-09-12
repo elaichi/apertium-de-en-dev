@@ -27,8 +27,8 @@ lt-comp rl apertium-de-en.de.dix en-de.autogen.bin
 
 # tests
 echo "- Tests (should return zeros)"
-cat de-vocab.speling | cut -d ";" -f 2 | sort | uniq | lt-proc de-en.automorf.bin | grep "\*" | wc
-cat de-vocab.speling | cut -d ";" -f 2 | sort | uniq | lt-proc de-en.automorf.bin | grep -v "/" | wc
+cat de-vocab.speling | cut -d ";" -f 2 | sort | uniq | lt-proc de-en.automorf.bin | grep "\*" | wc -l
+cat de-vocab.speling | cut -d ";" -f 2 | sort | uniq | lt-proc de-en.automorf.bin | grep -v "/" | wc -l
 
 # done!
 time_finish=$(date)
